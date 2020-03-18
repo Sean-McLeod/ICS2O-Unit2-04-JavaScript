@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="make an alert button">
+    <meta name="keywords" content="flowchart, button">
+    <meta name="author" content="sean mcleod">
+    <title>event listener button</title>
+  </head>
+  <body id="hi">
+    <button onclick="myfunction()">change background color</button>
+    <script>
+     function myfunction() {
+     document.getElementById("hi").style.backgroundColor="yellow";
+     }
+    </script>
+    <p id="ho"></p>
+    <button onclick="myfunction1()">Place a message</button>
+    <script>
+      function myfunction1() {
+      document.getElementById("ho").innerHTML="A message";
+      }
+    </script>
+    <br>
+    <br>
+    <input type="text" id="ent" value="text">
+    <p id="demo"></p>
+    <button onclick="myfunction2()">take out your text</button>
+    <script>
+      function myfunction2() {
+      var x = document.getElementById("ent").value;
+      document.getElementById("demo").innerHTML = x;
+      alert ("your message has been taken out from the textbox");
+      document.getElementById("ent").value="";
+      }
+    </script>
+  </body>
+</html>
